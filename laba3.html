@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>NA</title>
+<link rel="stylesheet" href="laba3.css">
+</head>
+<body>
+
+<header>
+  <b>NA</b>
+  <nav>
+    <a href="#" onclick="show('home')">Главная</a>
+    <a href="#" onclick="show('models')">Модели</a>
+    <a href="#" onclick="show('calc')">Калькулятор</a>
+  </nav>
+</header>
+
+<main>
+
+  <div id="home">
+    <h1>NA — автомобили будущего</h1>
+    <p>Скорость, комфорт и безопасность.</p>
+    <button onclick="show('models')">Смотреть модели</button>
+  </div>
+
+  <div id="models" style="display:none">
+    <h2>Модели</h2>
+    <div class="card">BMW M5 — 12 500 000 ₽</div>
+    <div class="card">BRABUS ROCKET G1200 — 45 000 000 ₽</div>
+    <div class="card">911 GT3S — 22 000 000 ₽</div>
+    <div class="card">ROLLS ROYCE — 38 000 000 ₽</div>
+    <div class="card">NISSAN GTR — 9 800 000 ₽</div>
+  </div>
+
+  <div id="calc" style="display:none">
+    <h2>Калькулятор</h2>
+    <select id="model">
+      <option value="">— модель —</option>
+      <option value="12500000">BMW M5 — 12 500 000 ₽</option>
+      <option value="45000000">BRABUS ROCKET G1200 — 45 000 000 ₽</option>
+      <option value="22000000">911 GT3S — 22 000 000 ₽</option>
+      <option value="38000000">ROLLS ROYCE — 38 000 000 ₽</option>
+      <option value="9800000">NISSAN GTR — 9 800 000 ₽</option>
+    </select>
+    <label><input type="checkbox" id="opt1" value="120000"> Комфорт +120 000</label>
+    <label><input type="checkbox" id="opt2" value="200000"> Безопасность +200 000</label>
+    <label><input type="checkbox" id="opt3" value="350000"> Аудио +350 000</label>
+    <button onclick="calc()">Рассчитать</button>
+    <p id="result"></p>
+  </div>
+
+</main>
+
+<footer>© 2026 NA</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
